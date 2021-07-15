@@ -101,6 +101,7 @@ while game_on == True:
 
     os.system('clear')
     
+    #ENDING OF GAME
     for item_tail in tail:
         if item_tail == my_position:
             game_on = False
