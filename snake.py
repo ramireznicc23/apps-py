@@ -16,7 +16,6 @@ my_position = [3, 1]
 map_objects = []
 tail_lenght = 0
 tail = []
-
 game_on = True
 
 #GENERATE RANDOM OBJECTS
@@ -56,7 +55,7 @@ while game_on == True:
                 while len(map_objects) < NUM_MAP_OBJ:
                     new_position = [random.randint(0, 19), random.randint(0, 14)]
 
-                    if new_position not in map_objects and new_position != my_position:
+                    if new_position not in map_objects and new_position not in tail and new_position != my_position:
                         map_objects.append(new_position)
                 
             print(' {} '.format(char_to_draw), end="")
